@@ -234,14 +234,10 @@ body{
     80% { transform: translateX(80%); }
 }
 
+/* for chefs section*/
 
 
-
-
-
-
-
-  .chefs{
+.chefs{
     padding-top: 7.5%;
     padding-bottom: 2.5%;
     text-align: center;
@@ -261,7 +257,7 @@ body{
     place-items: center;
     gap: 10px;
   }
-  .container {
+  .containershr {
     height: 300px;
     width: 300px;
     padding: 1rem;
@@ -279,11 +275,11 @@ body{
     width: 100%;
     position: relative;
   }
-  .container img {
+  .containershr img {
     width: 100%;
     height:100%;
   }
-  .container:hover {
+  .containershr:hover {
     background-position: 0 0;
   }
   .details {
@@ -333,7 +329,7 @@ body{
     display: inline-block;
     transition: all .5s;
 }
-  .container:hover .details {
+  .containershr:hover .details {
     bottom: 30px;
     border-color: #fb5849;
   }
@@ -348,10 +344,10 @@ body{
     opacity: 0;
     transition: 0.7s;
   }
-  .container:hover .img-wrapper:after {
+  .containershr:hover .img-wrapper:after {
     opacity: 0.85;
   }
-  .container:hover .social-icons{
+  .containershr:hover .social-icons{
     transform: translate(0px,-350%);
   }
   i:hover {
@@ -363,13 +359,13 @@ body{
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
-    .container {
+    .containershr {
       height: 400px;
       width: 350px;
       padding: 7px;
       padding-bottom: 40px;
     }
-    .container:hover  {
+    .containershr:hover  {
     border-color: #fb5849;
     color: #fb5849;
   }
