@@ -233,3 +233,145 @@ body{
     100% { transform: translateX(60%); }
     80% { transform: translateX(80%); }
 }
+
+
+
+
+
+
+
+
+  .chefs{
+    padding-top: 7.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+  }
+  h1{
+    font-size: 15px;
+    color: #fb5849;
+  }
+  p{
+    font-size: 30px;
+    color: #2a2a2a;
+  }
+  .wrapper {
+    padding: 0px 100px;
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+  }
+  .container {
+    height: 300px;
+    width: 300px;
+    padding: 1rem;
+    padding-bottom: 50px;
+    position: relative;
+    background: linear-gradient(#ffffff 50%, #ffffff 50%) 0 100% no-repeat;
+    border:#2a2a2a solid 1px;
+    background-size: 100% 200%;
+    transition: 0.7s;
+    overflow: hidden;
+
+  }
+  .img-wrapper {
+    height: 90%;
+    width: 100%;
+    position: relative;
+  }
+  .container img {
+    width: 100%;
+    height:100%;
+  }
+  .container:hover {
+    background-position: 0 0;
+  }
+  .details {
+    position: absolute;
+    opacity: 0.5;
+    color: #ffffff;
+    width: 80%;
+    text-align: center;
+    padding: 10px 0;
+    bottom: -100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transition: 0s;
+  }
+  .name
+  {
+    text-align: center;
+  }
+  h3,
+  h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  h3 {
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  .social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px 0 0px 0;
+  }
+  a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    transition: all .5s;
+}
+  .container:hover .details {
+    bottom: 30px;
+    border-color: #fb5849;
+  }
+  .img-wrapper:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.7s;
+  }
+  .container:hover .img-wrapper:after {
+    opacity: 0.85;
+  }
+  .container:hover .social-icons{
+    transform: translate(0px,-350%);
+  }
+  i:hover {
+    color:#fb5849;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 992px) {
+    .wrapper {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .container {
+      height: 400px;
+      width: 350px;
+      padding: 7px;
+      padding-bottom: 40px;
+    }
+    .container:hover  {
+    border-color: #fb5849;
+    color: #fb5849;
+  }
+  }
+
