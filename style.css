@@ -371,3 +371,358 @@ body{
   }
   } */
 
+
+
+
+
+/* contact us page css */
+#contact_us_body{
+    font-size: 16px;
+    margin: 7.5em 0 0 0;
+    padding: 7.5em 0;
+    height: 49.11875em;
+    background-image: url(reservation-bg.jpg);
+    display: flex;
+    justify-content: center;
+}
+#contact_us_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 71.25em;
+}
+#contact_us_cell_wrap{
+    height: fit-content;
+    font-size: 16px;
+    width: 50%;
+    padding: 0 0.9375em;
+}
+#contact_us_cell{
+    height: 100%;
+}
+#table_reservation_cell{
+    width: 50%;
+    height: 100%;
+    font-size: 16px;
+    padding: 0 0.9375em;
+}
+#contact_form{
+    height: 100%;
+}
+#contact{
+    font-size: 16px;
+    padding: 2.8125em 1.875em;
+    margin: 0 0 0 1.875em;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.4375em;
+}
+#contact_handles{
+    width: 100%;
+    display: flex;
+}
+#contact_phone{
+    width: 50%;
+    font-size: 16px;
+    height: 10.0875em;
+    padding: 0 0.9375em;
+}
+#contact_email{
+    width: 50%;
+    font-size: 16px;
+    height: 10.0875em;
+    padding: 0 0.9375em;
+}
+.card_contact{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 0.4375em;
+    padding: 0 0 1.25em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.contact_logo_wrap_ph{
+    position: absolute;
+    top: -15%;
+    left: 35%;
+    font-size: 16px;
+    padding: 1.5625em 1.375em;
+    border-radius: 50%;
+    background-color: #fb5849;
+    color: white;
+}
+.contact_logo_wrap_email{
+    position: absolute;
+    top: -15%;
+    left: 35%;
+    font-size: 16px;
+    padding: 1.5625em 1.375em;
+    border-radius: 50%;
+    background-color: #fb5849;
+    color: white;
+}
+
+.card_contact h4{
+    font-size: 20px;
+    margin: 0.75em 0 0.5em 0;
+    font-family: 'Poppins', sans-serif;
+}
+.card_contact p{
+    margin: 0 !important;
+    color: black !important;
+    font-weight: 300 !important;
+}
+
+
+/* table reservation layout */
+.input_row{
+    font-size: 16px;
+    height: 3.8125em;
+    width: 100%;
+    display: flex;
+}
+.input_wrap{
+    width: 50%;
+    font-size: 16px;
+    padding: 0 0.9375em;
+}
+.input_cell{
+    height: 2.875em;
+    font-size: 16px;
+    width: 100%;
+    padding: 0.1875em 1.25em 0.0625em;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 0.3125em;
+}
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 14px;
+}
+
+#message_input{
+    font-size: 16px;
+    height: 10.7125em !important;
+    padding: 0 0.9375em;
+}
+.message_input{
+    width: 100%;
+    padding: 1.25em;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 0.3125em;
+}
+
+
+#button_reservation_wrap{
+    height: 2.71875em !important;
+    padding: 0 0.9375em;
+    margin: 0.9375em 0 0 0;
+}
+#button_reservation{
+    width: 100%;
+    background-color: #fb5849;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+    border: #fb5849 1px solid;
+    border-radius: 0.3125em;
+}
+
+/* contact us content design */
+#contact_us_cell h6{
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+#contact_us_cell h2{
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0.666666667em 0 1em 0;
+    line-height: 1.33333334em;
+}
+#contact_us_cell p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0 0 4.642857142857143em 0;
+    color: white;
+    line-height: 1.5625em;
+}
+#contact h4{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0 0 1em 0;
+}
+
+
+
+
+
+
+
+
+
+/* media query for contact us page */
+@media only screen and (max-width:1200px) {
+    #contact_us_cell_wrap{
+        font-size: 16px;
+        width: 30em;
+    }
+    #table_reservation_cell{
+        font-size: 16px;
+        width: 30em;
+    }
+    #contact_phone{
+        font-size: 16px;
+        padding: 0 0.9375em 0 0;
+    }
+    #contact_email{
+        font-size: 16px;
+        padding: 0 0 0 0.9375em;
+    }
+}
+
+
+@media only screen and (max-width:992px) {
+    #contact_us_row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100% !important;
+        font-size: 16px;
+        width: 45em;
+    }
+    #contact_us_body{
+        font-size: 16px;
+        height: 101.85625em;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    #contact_us_cell_wrap{
+        width: 100%;
+        font-size: 16px;
+        width: 100%;
+    }
+    #contact_phone{
+        font-size: 16px;
+        height: 13.8375em;
+        width: 100%;
+        padding: 0 7.5px;
+    }
+    #contact_email{
+        font-size: 16px;
+        height: 100%;
+        width: 100%;
+        padding: 0 7.5px;
+    }
+    .card_contact{
+        font-size: 16px;
+        height: 10.0875em;
+    }
+    #contact_handles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #table_reservation_cell{
+        font-size: 16px;
+        height: 46.49375em;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+
+    .contact_logo_wrap_ph{
+        top: -15%;
+        left: 44%;
+    }
+    .contact_logo_wrap_email{
+        top: -15%;
+        left: 44%;
+    }
+
+
+
+    #contact{
+        margin: 0;
+        width: 100%;
+    }
+
+
+
+
+    .input_row{
+        display: flex;
+        flex-direction: column;
+        height: 7.625em;
+        font-size: 16px;
+    }
+    .input_wrap{
+        width: 100%;
+        padding: 0;
+        height: 50%;
+    }
+    #message_input{
+        padding: 0;
+        height: 100%;
+    }
+    .message_input{
+        height: 100%;
+    }
+    #button_reservation{
+        height: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width:767px) {
+    #contact_us_row{
+        font-size: 16px;
+        width: 33.75em;
+    }
+    #contact_us_cell_wrap{
+        width: 100%;
+    }
+    #contact_email{
+        padding: 0;
+    }
+    #contact_phone{
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width:575px) {
+    #contact_us_row{
+        width: 100%;
+    }
+}
+
+/* contact us page css ends */
+
