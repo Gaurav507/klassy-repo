@@ -730,4 +730,158 @@ body{
 }
 
 /* contact us page css ends */
+.orders {
+  /* font-family: "Roboto", sans-serif;
+    font-family: "Baloo Bhai";
+    font-family: "Overpass", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+.headingFoodSection {
+  font-size: 15px;
+}
+.headingFoodSection {
+  color: #fb5849;
+
+  font-size: 15px;
+  position: relative;
+}
+.headingBox {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.foodBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+.foodtype {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.headingInsideBox {
+  text-align: center;
+  margin: 1rem 0rem 0rem 0rem;
+}
+.headingInsideBox h1 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.colorred {
+  color: #fb5849;
+}
+.textInsideMenu {
+  max-width: 20rem;
+}
+.textInsideMenu h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.priceBox {
+  background-color: #fb5849;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.orderFoodBox {
+  display: flex;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+.menuBox {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.textInsideMenu {
+  padding: 0rem 1rem;
+}
+.notvisiblebox {
+  display: none;
+}
+footer {
+  padding: 0px;
+  margin: 2rem 0rem 0rem 0rem;
+  background: #fb5849;
+  display: flex;
+  max-width: 100%;
+  height: 10rem;
+  align-items: center;
+  justify-content: space-around;
+  color: aliceblue;
+}
+.iconsfooter {
+  display: flex;
+}
+.iconsfooter i {
+  margin: 0rem 1rem;
+  background-color: aliceblue;
+  color: #fb5849;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.iconsfooter i:hover {
+  color: black;
+}
+@media screen and (max-width: 1255px) {
+  .menuBox {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    justify-content: center;
+    padding: 4rem;
+  }
+  .notvisiblebox {
+    display: none;
+  }
+  .orderFoodBox {
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+    max-width: 30rem;
+  }
+}
+@media screen and (max-width: 975px) {
+  .menuBox {
+    /* display: grid;
+      grid-template-columns: auto auto;
+      align-content: center;
+      justify-content: center;
+      padding: 4rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .notvisiblebox {
+    display: none;
+    max-width: 27rem;
+    padding: 3rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+}
 
