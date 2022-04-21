@@ -185,59 +185,131 @@ body{
       margin-left: 28vmin;
       margin-bottom: 5vmin;
   }
-  .container{
-      border: solid;
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+/*   font-family: Arial, Helvetica, sans-serif; */
+  overflow-x: hidden;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 5px;
+    /* border: solid; */
     display: flex;
-    width: 240vmin;
-    /* flex-wrap: wrap; */
+    width: 200%;
+    /* overflow: hidden; */
+    /* left: 10px; */
+    animation: animationForMenuSection 20s infinite;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  @keyframes animationForMenuSection {
+    0% { transform: translateX(0%); }
+    16% {transform: translateX(0%);}
+    20% { transform: translateX(-10%); }
+    36% {transform: translateX(-10%);}
+    40% {transform: translateX(-20%); }
+    56% {transform: translateX(-20%);}
+    60% {transform: translateX(-30%); }
+    76% {transform: translateX(-30%);}
+    80% {transform: translateX(-40%); }
+    96% {transform: translateX(-40%);}
+    100% {transform: translateX(-50%); }
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-    .item{
-        height: 53vmin;
-        width: 35vmin;
-        margin: 2vmin;
-        border: solid;
-    }
+}
+
+/* Style the counter cards */
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* border: solid red 5px; */
+  margin: 5px;
+  height: 55vmin;
+  overflow: hidden;
+}
 
 .card1
 {
-    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-03.jpg);
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-01.jpg);
 }
 .card2
 {
-    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-01.jpg);
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-02.jpg);
 }
 .card3
 {
-    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-02.jpg);
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-03.jpg);
 }
 .card4
 {
-    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-01.jpg);
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-04.jpg);
 }
 .card5
-{
-   background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-04.jpg);
-}
-.card6
 {
    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-05.jpg);
 }
 
-@keyframes leftToRight {
-    0% { transform: translateX(0vmin); }
-    /* 20% { transform: translateX(20%); }
-    40% { transform: translateX(40%); }
-    60% { transform: translateX(60%); } */
-    100% { transform: translateX(40vmin); }
+.price{
+    /* border: solid white 2px; */
+    margin: 0;
+    color: white;
+    background-color: #f05139;
+    width: fit-content;
+    padding: 3% 6%;
+}
+.card-content{
+    background-color: #f05139;
+    padding: 4% 10%;
+    /* padding-left: 10%; */
+    position: relative;
+    transition: transform 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(135%);
+}
+.card:hover .card-content{
+    transform: translateY(68%);
+}
+.card-content h1{
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+}
+.card-content p{
+    line-height: 1.5;
+    margin: 1.6vw 0;
+    font-size: 1vw;
+    color: white;
+}
+.card-content a{
+    text-decoration: none;
+    font-size: 0.9vw;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
-@keyframes rightToLeft {
-    0% { transform: translateX(0%); }
-    50% { transform: translateX(20%); }
-    80% { transform: translateX(40%); }
-    100% { transform: translateX(60%); }
-    80% { transform: translateX(80%); }
-}
 
 /* for chefs section*/
 
