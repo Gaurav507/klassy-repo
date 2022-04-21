@@ -1,20 +1,43 @@
-let slideNum = 0;
-slideShow();
-
-function slideShow(){
-  let slides = document.getElementsByClassName("slide");
-  let slideBg = document.getElementById("right")
-  for(let i=0;i<slides.length;i++){
-    slides[i].style.display = "none";
-  }
-  slideNum++;
-  if(slideNum > slides.length){
-    slideNum = 1;
-  }
-  slides[slideNum-1].style.display = "block";
-  slides[slideNum-1].style.position = "sticky";
-  setTimeout(slideShow,10000);
+let navLinks = document.getElementsByClassName("nav-link");
+navLinks[0].classList.add("activeLink");
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("activeLink");
+    current[0].classList.remove("activeLink");
+    // current[0].className = current[0].className.replace(" activeLink", "");
+    this.classList.add("activeLink");
+  });
 }
+
+
+// When the user scrolls down 750px from the top of the document
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+    // alert("hii boss u have scrolled by 80");
+    document.getElementById("navbar").style.position = "fixed";
+    document.getElementById("navbar").classList.add("slideFromTopAnimation");
+    // document.getElementById("navbar").style.paddingBottom = "0.5vw";
+    // document.getElementById("navbar").classList.add("slideToTopAnimation");    
+  } else {
+    document.getElementById("navbar").style.position = "relative";
+    // document.getElementById("navbar").classList.remove("slideToTopAnimation");
+    document.getElementById("navbar").classList.remove("slideFromTopAnimation");
+  }
+}
+
+function toggleMenu() {
+  let navLinks = document.querySelector(".nav-links");
+  if(navLinks.style.display === "none"){
+      navLinks.style.display = "block";
+  }
+  else{
+      navLinks.style.display = "none";
+  }
+}
+
 const displayColored1 = document.querySelector(".foodtype1");
 const displayColored2 = document.querySelector(".foodtype2");
 const displayColored3 = document.querySelector(".foodtype3");
