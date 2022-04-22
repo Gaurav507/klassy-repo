@@ -348,10 +348,10 @@ body {
     position: relative;
     transition: transform 0.5s ease;
     font-family: 'Poppins', sans-serif;
-    transform: translateY(135%);
+    transform: translateY(145%);
 }
 .card:hover .card-content{
-    transform: translateY(68%);
+    transform: translateY(75%);
 }
 .card-content h1{
     color: rgb(255, 255, 255);
