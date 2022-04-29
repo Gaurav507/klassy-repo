@@ -374,27 +374,27 @@ body {
 /* for chefs section*/
 
 
-/* .chefs{
+ .chefs{
     padding-top: 7.5%;
     padding-bottom: 2.5%;
     text-align: center;
   }
-  h1{
+ .chefs h1{
     font-size: 15px;
     color: #fb5849;
   }
-  p{
+ .chefs p{
     font-size: 30px;
     color: #2a2a2a;
   }
-  .wrapper {
+  .chefs .wrapper {
     padding: 0px 100px;
     min-height: 60vh;
     display: grid;
     place-items: center;
     gap: 10px;
   }
-  .containershr {
+  .chefs .containershr {
     height: 300px;
     width: 300px;
     padding: 1rem;
@@ -407,19 +407,19 @@ body {
     overflow: hidden;
 
   }
-  .img-wrapper {
+  .chefs .img-wrapper {
     height: 90%;
     width: 100%;
     position: relative;
   }
-  .containershr img {
+  .chefs .containershr img {
     width: 100%;
     height:100%;
   }
-  .containershr:hover {
+  .chefs .containershr:hover {
     background-position: 0 0;
   }
-  .details {
+  .chefs .details {
     position: absolute;
     opacity: 0.5;
     color: #ffffff;
@@ -432,30 +432,30 @@ body {
     right: 0;
     transition: 0s;
   }
-  .name
+  .chefs .name
   {
     text-align: center;
   }
-  h3,
+  .chefs h3,
   h5 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
   }
-  h3 {
+ .chefs h3 {
     letter-spacing: 1px;
     font-size: 20px;
   }
-  h5 {
+  .chefs h5 {
     font-size: 12px;
   }
-  .social-icons {
+  .chefs .social-icons {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 10px;
     margin: 0px 0 0px 0;
   }
-  a {
+  .chefs a {
     width: 40px;
     height: 40px;
     background-color: #fff;
@@ -466,11 +466,11 @@ body {
     display: inline-block;
     transition: all .5s;
 }
-  .containershr:hover .details {
+  .chefs .containershr:hover .details {
     bottom: 30px;
     border-color: #fb5849;
   }
-  .img-wrapper:after {
+  .chefs .img-wrapper:after {
     position: absolute;
     content: "";
     height: 100%;
@@ -481,32 +481,32 @@ body {
     opacity: 0;
     transition: 0.7s;
   }
-  .containershr:hover .img-wrapper:after {
+  .chefs .containershr:hover .img-wrapper:after {
     opacity: 0.85;
   }
-  .containershr:hover .social-icons{
+  .chefs .containershr:hover .social-icons{
     transform: translate(0px,-350%);
   }
-  i:hover {
+  .chefs i:hover {
     color:#fb5849;
     cursor: pointer;
   }
   @media screen and (min-width: 992px) {
-    .wrapper {
+    .chefs .wrapper {
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
-    .containershr {
+    .chefs .containershr {
       height: 400px;
       width: 350px;
       padding: 7px;
       padding-bottom: 40px;
     }
-    .containershr:hover  {
+    .chefs .containershr:hover  {
     border-color: #fb5849;
     color: #fb5849;
   }
-  } */
+  } 
 
 
 
