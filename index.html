@@ -17,29 +17,46 @@
     <script src="https://kit.fontawesome.com/711e55e295.js" crossorigin="anonymous"></script>
     </head>
 <body>
-        <div class="navbar" id = "navbar">
-        <div class = "logo">
-            <img src="klassy-logo.png" alt="logo">
+         <nav>
+    <div class = "navbar" id = "navbar">
+        <div class = "nav-head">
+            <img src="klassy-logo.png" class="nav-img">
         </div>
-        <div class = "nav-btns">
-            <div class="navlink"><a href="#home" class = "nav-link">Home</a></div>
-            <div class="navlink"><a href="#about" class = "nav-link">About</a></div>
-            <div class="navlink"><a href="#menu" class = "nav-link">Menu</a></div>
-            <div class="navlink"><a href="#chefs" class = "nav-link">Chefs</a></div>
-            <div class="dropdown navlink">
-            <a class="dropbtn nav-link">Features 
-                <i class="fa fa-apple"></i>
-            </a>
-            <ul class="dropdown-content">
-                <li><a href="#">Feature Page 1</a></li>
-                <li><a href="#">Feature Page 2</a></li>
-                <li><a href="#">Feature Page 3</a></li>
-                <li><a href="#">Feature Page 4</a></li>
+        <div class = "nav-links">
+            <ul>
+                <li class="link">
+                    <a class = "home" href = "#home">Home</a>
+                </li>
+                <li class="link">
+                    <a class = "about" href = "#about">About</a>
+                </li>
+                <li class="link">
+                    <a class = "skills" href = "#menu">Menu</a>
+                </li>
+                <li class="link">
+                    <a class = "projects" href = "#chefs">Chefs</a>
+                </li>
+                <li class="link dropdown">
+                  <a class = "features dropbtn" href = "#features">Features &nbsp;<i class="fa-solid fa-angle-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">Feature 1</a>
+                    <a href="#">Feature 2</a>
+                    <a href="#">Feature 3</a>
+                    <a href="#">Feature 4</a>
+                  </div>
+                </li>
+                <li class="link">
+                    <a class = "blog" href = "#contact">Contact Us</a>
+                </li>
             </ul>
-            </div> 
-            <div class="navlink"><a href="#contact_us_body" class = "nav-link">Contact Us</a></div>
+        </div>
+        <div class = "nav-end">
+            <div class="toggle-menu">
+                <i class="fas fa-bars fa-2x" onclick="toggleMenu(this)"></i>
+            </div>
         </div>
     </div>
+</nav>
  <!-- navbar done -->
     <!-- section1 ṣtarting-->
     <div class = "section1">
