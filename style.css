@@ -199,6 +199,10 @@ body{
       border: 1px solid;
       width: 38%;
       color: white;
+      font-family: 'Dancing Script', cursive;
+      color: #fff;
+      font-size: 54px;
+      font-weight: 700;
       height: 700px;
       display: flex;
       justify-content: center;
@@ -263,7 +267,7 @@ body{
   /* section 1 completed and staring about section */
 
   div.about{
-      border: solid;
+/*       border: solid; */
       display: flex;
       padding-top: 6%;
   }
@@ -448,7 +452,7 @@ body {
 
 @media screen and (max-width: 1000px){
   .row{
-    border: solid;
+/*     border: solid; */
     width: 500%;
   }
   .column{
